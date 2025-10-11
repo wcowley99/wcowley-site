@@ -1,0 +1,17 @@
+baseURL = 'https://wcowley.com/'
+languageCode = 'en-us'
+title = 'William Cowley'
+theme = 'hugo-bearcub'
+copyright = 'William Cowley'
+
+enableRobotsTXT = true
+
+[params]
+madeWith = 'Made with [Bear Cub](https://github.com/clente/hugo-bearcub)'
+
+[params.social]
+github = "https://github.com/wcowley99"
+twitter = "https://twitter.com/bcowley99"
+
+[markup.goldmark.renderer]
+unsafe=true
