@@ -8,10 +8,20 @@ enableRobotsTXT = true
 
 [params]
 madeWith = 'Made with [Bear Cub](https://github.com/clente/hugo-bearcub)'
+math = true
+themeStyle = "herman"
 
 [params.social]
 github = "https://github.com/wcowley99"
 twitter = "https://twitter.com/bcowley99"
 
-[markup.goldmark.renderer]
-unsafe=true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
