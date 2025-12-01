@@ -39,6 +39,16 @@ Our language:
 \Sigma = \{ +, *, =, \text{'let'}, \text{'in'}, \text{num}, \text{id} \}
 \]
 
+Our `FIRST` table:
+```
+FIRST = {
+  Start: let, (, num, id
+  Expr: let, (, num, id
+  Factor: (, num, id
+  Term: (, num, id
+}
+```
+
 Our `FOLLOW` table:
 ```
 FOLLOW = {
